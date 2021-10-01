@@ -1,0 +1,1521 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  /*overflow-y: hidden;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.mid-content1 {
+  position: absolute;
+  /* display: block; */
+  display: flex;
+  flex-direction: column; /*flex, flex-direction , align items, and justify content*/
+  align-items: flex-start;
+  justify-content: center;
+  top: 67%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+}
+
+.mid-content1-large {
+  display: flex;
+  flex-direction: row; /* align items and justify content*/
+  justify-content: center;
+  align-items: flex-start;
+  color: #93abe3;
+  padding-left: 22%;
+}
+
+.mid-content1-small {
+  color: #fff;
+  padding-top: 20px;
+  font-size: 22px;
+}
+
+hr {
+  height: 0.5px;
+  border: none;
+  margin-top: 5px;
+  margin-left: -15px;
+  width: 150%;
+  color: #fff;
+  background-color: #fff;
+}
+
+.par1 {
+  font-size: 54px;
+  line-height: 77px;
+  padding-right: 65px;
+}
+
+.par11 {
+  padding-left: 65px;
+}
+
+#small-text {
+  font-size: 26px;
+  color: #fff;
+  padding-left: 22%;
+}
+
+.single-line {
+  text-align: center;
+}
+
+#p1 {
+  font-family: Raleway;
+  color: #fff;
+  font-size: 35px;
+  padding-right: 20px;
+}
+
+.h2 {
+  font-family: Raleway;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.mid-content {
+  position: absolute;
+  display: flex; /*flex and flex direction add justify content and align items*/
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  top: 35%;
+  left: 33%;
+  animation: fadeIn 1s ease-in both;
+}
+
+.single-line {
+  display: inline-flex;
+}
+
+.d1 {
+  margin: 0 5px 0 0;
+}
+
+.events {
+  position: relative;
+}
+
+.wrappers {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 50%;
+  padding-bottom: 75px;
+}
+
+.domains {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.domains h2 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+  position: absolute;
+  top: 100%;
+  word-spacing: 20px;
+}
+
+.glry {
+  position: relative;
+  margin-top: 50%;
+}
+
+.glry2 {
+  margin-top: 8%;
+}
+
+#g1,
+.g2 {
+  width: 20%;
+  line-height: 10px;
+  margin-left: 40%;
+  margin-bottom: 4%;
+  margin-top: -3px;
+  color: #14d2cd;
+  background-color: #14d2cd;
+  height: 5px;
+}
+
+.glry .carousel-cell {
+  width: 50%;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.glry .carousel-cell:before {
+  display: block;
+}
+
+.glry2 .carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+}
+
+.glry .carousel-cell img {
+  height: 500px;
+  width: 500px;
+  margin-left: 10%;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+.gallery,
+.contact {
+  text-align: center;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  padding: 20px;
+  font-weight: lighter;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+}
+
+.contact {
+  margin-top: 10%;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+footer {
+  background: #000;
+  margin-top: 50px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px;
+  margin: 20px;
+}
+
+.foot h6 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#vitlogo {
+  height: 100px;
+  width: 300px;
+}
+
+#cpy {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/*RESPONSIVITY*/
+@media screen and (min-width: 768px) {
+  .carousel img {
+    height: 400px;
+  }
+}
+
+@keyframes autoplay {
+  0% {
+    top: -100%;
+  }
+  50% {
+    top: 0%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes autoplaytwo {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 3%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  /* .wrappers {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 60%;
+    padding-bottom: 75px;
+  } */
+  .contact {
+    font-size: 38px;
+  }
+  #ieilogo {
+    height: 70px;
+    width: 70px;
+    margin-right: 5px;
+  }
+  .foot h6 {
+    font-size: 26px;
+  }
+
+  #vitlogo {
+    height: 80px;
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #p1 {
+    font-size: 2rem;
+  }
+  .h2 {
+    font-size: 1.3rem;
+    /* font-size: 20px; */
+  }
+  #small-text {
+    /* font-size: 26px; */
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 46px;
+    top: 100%;
+  }
+  /* .wrappers {
+    margin-top: 60%;
+    padding-bottom: 60px;
+  }
+  .card {
+    width: 200px;
+    height: 280px;
+  }
+  .card .info h1 {
+    font-size: 1.2rem;
+  }
+
+  .card .info p {
+    font-size: 12px;
+    font-weight: 600;
+  } */
+
+  .gallery {
+    font-size: 25px;
+  }
+  .glry .carousel-cell img {
+    height: 400px;
+    width: 400px;
+    margin-left: 5%;
+  }
+  .carousel img {
+    height: 250px;
+  }
+  .contact {
+    font-size: 30px;
+  }
+  #ieilogo {
+    height: 60px;
+    width: 60px;
+    /* margin-right: 5px; */
+  }
+  .foot h6 {
+    font-size: 24px;
+  }
+
+  #vitlogo {
+    height: 60px;
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #p1 {
+    font-size: 1.7rem;
+  }
+  .h2 {
+    font-size: 1rem;
+    /* font-size: 20px; */
+  }
+  #small-text {
+    /* font-size: 26px; */
+    font-size: 1.3rem;
+  }
+  .par1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 42px;
+    top: 100%;
+  }
+  /* .wrappers {
+    margin-top: 65%;
+    padding-bottom: 40px;
+  }
+  .card {
+    width: 160px;
+    height: 240px;
+  }
+  .card .info h1 {
+    font-size: 1rem;
+  }
+
+  .card .info p {
+    font-size: 10px;
+    font-weight: 600;
+  } */
+  .gallery {
+    font-size: 36px;
+  }
+  .glry .carousel-cell img {
+    height: 400px;
+    width: 400px;
+    margin-left: 5%;
+  }
+  .carousel img {
+    height: 200px;
+  }
+  .glry {
+    margin: 80px 0;
+    margin-top: 60%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1025px) and (max-height: 1367px) {
+  /*ipad pro*/
+  /* .wrappers {
+    margin-top: 140%;
+  } */
+  #p1 {
+    font-size: 3rem;
+    margin-left: -150px;
+  }
+  .h2 {
+    font-size: 2rem;
+    margin-left: -120px;
+    /* font-size: 20px; */
+  }
+  #small-text {
+    /* font-size: 26px; */
+    font-size: 3rem;
+  }
+  .par1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 42px;
+    top: 100%;
+  }
+  .vertical {
+    top: 104%;
+    left: 100px;
+  }
+
+  .v1 {
+    top: 105%;
+    left: 240px;
+    height: 120px;
+  }
+
+  .v2 {
+    top: 105%;
+    left: 450px;
+    height: 170px;
+  }
+
+  .v3 {
+    top: 105%;
+    left: 560px;
+    height: 170px;
+  }
+
+  .v4 {
+    top: 105%;
+    left: 800px;
+    height: 170px;
+  }
+
+  .v5 {
+    top: 104%;
+    left: 900px;
+    height: 170px;
+  }
+  .carousel img {
+    height: 400px;
+  }
+  .glry .carousel-cell img {
+    height: 400px;
+    width: 400px;
+    margin-left: 5%;
+  }
+  .glry {
+    margin-top: 150%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1023px) {
+  /* .wrappers {
+    margin-top: 70%;
+  } */
+  .vertical {
+    top: 108%;
+  }
+  .v1 {
+    top: 110%;
+  }
+  .v2 {
+    top: 111%;
+  }
+  .v3 {
+    top: 111%;
+  }
+  .v4 {
+    top: 110%;
+  }
+  .v5 {
+    top: 109%;
+  }
+  #p1 {
+    font-size: 1.7rem;
+    margin-left: -7%;
+  }
+  .h2 {
+    font-size: 1rem;
+    /* font-size: 20px; */
+  }
+  #small-text {
+    /* font-size: 26px; */
+    font-size: 1.3rem;
+  }
+  .par1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 42px;
+    top: 100%;
+  }
+  .glry {
+    margin-top: 70%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 30px;
+  }
+  .glry .carousel-cell img {
+    height: 400px;
+    width: 400px;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 990px) {
+  #small-text {
+    font-size: 17px;
+  }
+  .par1 {
+    font-size: 40px;
+    padding-right: 45px;
+  }
+  .mid-content1-small {
+    font-size: inherit;
+  }
+  h2 {
+    font-size: 30px;
+    top: 100%;
+  }
+  .rope {
+    top: 102%;
+  }
+  .wrappers {
+    margin-top: 75%;
+    padding-bottom: 40px;
+  }
+  .gallery {
+    font-size: 36px;
+  }
+  .glry .carousel-cell img {
+    height: 300px;
+    width: 300px;
+    margin-left: 20%;
+  }
+  .carousel img {
+    height: 200px;
+  }
+  .glry {
+    margin: 80px 0;
+  }
+  .vertical {
+    top: 109%;
+    /* left: 120px; */
+    left: 12%;
+    /* height: 200px; */
+    height: 30%;
+  }
+
+  .v1 {
+    top: 110%;
+    /* left: 170px; */
+    left: 22%;
+    /* height: 200px; */
+    height: 30%;
+  }
+
+  .v2 {
+    top: 112%;
+    /* left: 420px; */
+    left: 45%;
+    /* height: 200px; */
+    height: 30%;
+  }
+
+  .v3 {
+    top: 112%;
+    /* left: 470px; */
+    left: 55%;
+    /* height: 200px; */
+    height: 30%;
+  }
+
+  .v4 {
+    top: 110%;
+    /* left: 740px; */
+    left: 79%;
+    /* height: 200px; */
+    height: 30%;
+  }
+
+  .v5 {
+    top: 109%;
+    /* left: 790px; */
+    left: 87%;
+    /* height: 200px; */
+    height: 30%;
+  }
+  .contact {
+    font-size: 32px;
+  }
+  #ieilogo {
+    height: 50px;
+    width: 50px;
+  }
+  .foot h6 {
+    font-size: 20px;
+  }
+
+  #vitlogo {
+    height: 50px;
+    width: 250px;
+  }
+  .glry {
+    margin-top: 70%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 30px;
+  }
+}
+
+/*******************************/
+
+.svg {
+  color: #fff;
+}
+
+.contact-form {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin: 50px 0;
+}
+.contact-form > * {
+  width: 50%;
+}
+.contact-form .first-container {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://colorlib.com/etc/cf/ContactFrom_v17/images/bg-01.jpg") center
+      center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .first-container .info-container div {
+  margin: 24px 0;
+}
+.contact-form .first-container .info-container div h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+}
+.contact-form .first-container .info-container div:first-of-type p {
+  max-width: 260px;
+  color: #999;
+}
+.contact-form .first-container .info-container div p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #00ad5f;
+  font-family: "Raleway", sans-serif;
+}
+.contact-form .second-container {
+  padding: 30px;
+}
+.contact-form .second-container h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.contact-form .second-container form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .second-container form .form-group {
+  margin-bottom: 10px;
+}
+.contact-form .second-container form .form-group * {
+  min-height: 55px;
+  border: 1px solid #e6e6e6;
+  padding: 0 20px;
+  font-weight: bold;
+}
+.contact-form .second-container form .form-group label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  font-size: 16px;
+  color: #333;
+  margin-top: -1px;
+  font-family: "Raleway", sans-serif;
+}
+.contact-form .second-container form .form-group:first-of-type input {
+  width: 50.1%;
+  margin-right: -5px;
+}
+.contact-form .second-container form .form-group input {
+  width: 100%;
+  font-size: 15px;
+  margin-top: -2px;
+  font-family: "Raleway", sans-serif;
+}
+.contact-form .second-container form .form-group input::placeholder,
+.contact-form .second-container form .form-group textarea::placeholder {
+  color: #999;
+}
+.contact-form .second-container form .form-group textarea {
+  width: 100%;
+  min-height: 80px;
+  resize: none;
+  padding: 10px 20px;
+  margin-top: -1px;
+}
+.contact-form .second-container form button {
+  width: 200px;
+  height: 50px;
+  background: #344fa1;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  border: 0;
+  position: relative;
+  left: calc(50% - 100px);
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+.contact-form .second-container form button:hover {
+  background: #3d84b8;
+}
+@media screen and (max-width: 800px) {
+  .contact-form {
+    width: 90vw;
+  }
+  .glry .carousel-cell img {
+    height: 300px;
+    width: 300px;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contact-form {
+    flex-direction: column-reverse;
+  }
+  .contact-form > * {
+    width: 100%;
+  }
+  .contact-form .first-container {
+    padding: 40px 0;
+  }
+  .glry .carousel-cell img {
+    height: 300px;
+    width: 300px;
+    margin-left: 5%;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120%;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  background: #fff;
+  height: 60px;
+  margin-bottom: 1em;
+}
+.button a {
+  text-decoration: none;
+  color: #000;
+}
+.button a:hover {
+  color: white;
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.facebook:hover {
+  background: #3b5998;
+}
+
+.linkedin:hover {
+  background: #1da1f2;
+}
+
+.instagram:hover {
+  background: linear-gradient(
+    135deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+
+.github:hover {
+  background: black;
+}
+
+/*********************************/
+
+@media (max-width: 875px) {
+  #p1 {
+    font-size: 1.7rem;
+    margin-left: -10%;
+  }
+  .h2 {
+    font-size: inherit;
+  }
+  .glry {
+    margin-top: 75%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #p1 {
+    font-size: 1.5rem;
+    margin-left: -50px;
+  }
+  .h2 {
+    font-size: 1rem;
+    margin-left: -60px;
+  }
+  .wrappers {
+    margin-top: 80%;
+    padding-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 260px;
+    height: 340px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .card .info h1 {
+    font-size: 2rem;
+  }
+
+  .card .info p {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .gallery {
+    font-size: 36px;
+  }
+  .glry .carousel-cell img {
+    height: 300px;
+    width: 300px;
+    margin-left: 20%;
+  }
+  .carousel img {
+    height: 160px;
+  }
+  .glry {
+    margin: 80px 0;
+  }
+  .vertical {
+    top: 111%;
+    /* left: 340px; */
+    left: 40%;
+    /* height: 400px; */
+    height: 150%;
+  }
+
+  .v1 {
+    top: 111%;
+    /* left: 500px; */
+    left: 60%;
+    /* height: 400px; */
+    height: 150%;
+  }
+
+  .v2 {
+    top: 150%;
+    /* left: 500px; */
+    left: 60%;
+    /* height: 400px; */
+    height: 50%;
+  }
+
+  .v3 {
+    top: 150%;
+    /* left: 340px; */
+    left: 40%;
+    /* height: 400px; */
+    height: 50%;
+  }
+
+  .v4 {
+    top: 210%;
+    /* left: 500px; */
+    left: 60%;
+    /* height: 400px; */
+    height: 50%;
+  }
+
+  .v5 {
+    top: 210%;
+    /* left: 340px; */
+    left: 40%;
+    /* height: 400px; */
+    height: 50%;
+  }
+  .vertical,
+  .v1,
+  .v2,
+  .v3,
+  .v4,
+  .v5 {
+    display: none;
+  }
+  .glry {
+    margin-top: 75%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 770px) and (max-height: 1025px) {
+  /*ipad*/
+  #p1 {
+    font-size: 2rem;
+    margin-left: -100px;
+  }
+  .h2 {
+    font-size: 1.2rem;
+    margin-left: -70px;
+    /* font-size: 20px; */
+  }
+  #small-text {
+    /* font-size: 26px; */
+    font-size: 1.3rem;
+  }
+  .par1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 25px;
+    top: 100%;
+  }
+  .wrappers {
+    margin-top: 140%;
+  }
+
+  .foot h6 {
+    font-size: 20px;
+  }
+  #cpy p {
+    font-size: 12px;
+  }
+  .glry {
+    margin-top: 135%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 24px;
+  }
+  .glry .carousel-cell img {
+    height: 250px;
+    width: 250px;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 767px) {
+  .wrappers {
+    margin-top: 100%;
+  }
+  .card {
+    width: 220px;
+    height: 300px;
+    top: 10px;
+  }
+  .card .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .card .info p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .glry .carousel-cell img {
+    height: 250px;
+    width: 250px;
+    margin-left: 20%;
+  }
+  .carousel img {
+    height: 160px;
+  }
+  .wrappers {
+    margin-top: 90%;
+  }
+  .glry {
+    margin-top: 100%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #p1 {
+    font-size: 1.5rem;
+    margin-left: -60px;
+  }
+  .h2 {
+    font-size: 1rem;
+    margin-left: -60px;
+    /* font-size: 20px; */
+  }
+  #small-text {
+    /* font-size: 26px; */
+    font-size: 1rem;
+  }
+  .par1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 25px;
+    top: 100%;
+  }
+  .gallery {
+    font-size: 1.5rem;
+  }
+  .wrappers {
+    margin-top: 110%;
+  }
+
+  .contact {
+    font-size: 20px;
+  }
+  .foot h6 {
+    font-size: 14px;
+  }
+  .foot {
+    padding: 10px;
+  }
+  .glry {
+    margin-top: 120%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 16px;
+  }
+  .glry .carousel-cell img {
+    height: 200px;
+    width: 200px;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 550px) {
+  #p1 {
+    font-size: 1.17rem;
+    margin-left: -15%;
+  }
+  .h2 {
+    font-size: 0.85rem;
+    margin-left: -40%;
+  }
+  #small-text {
+    font-size: 0.85rem;
+  }
+  .par1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .wrappers {
+    margin-top: 130%;
+  }
+  .card {
+    width: 160px;
+    height: 240px;
+    top: 10px;
+  }
+  .card .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .card .info p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .cursor {
+    visibility: hidden;
+  }
+  .cursor2 {
+    visibility: hidden;
+  }
+
+  .foot h6 {
+    font-size: 12px;
+  }
+  .glry {
+    margin-top: 130%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 12px;
+  }
+  .glry .carousel-cell img {
+    height: 180px;
+    width: 180px;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #p1 {
+    font-size: 0.9rem;
+    margin-left: -15%;
+    font-weight: 600;
+  }
+  .h2 {
+    font-size: 0.85rem;
+    margin-left: -40%;
+  }
+  #small-text {
+    font-size: 0.6rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 20px;
+  }
+  .par1 {
+    font-size: 1.2rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 20px;
+  }
+  .par11 {
+    margin-left: -30px;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .wrappers {
+    margin-top: 140%;
+  }
+
+  #ieilogo {
+    height: 30px;
+    width: 30px;
+  }
+  .foot h6 {
+    font-size: 10px;
+  }
+
+  #vitlogo {
+    height: 30px;
+    width: 230px;
+  }
+  #cpy p {
+    font-size: 10px;
+  }
+  .foot {
+    padding: 0px;
+  }
+  .glry {
+    margin-top: 160%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 12px;
+  }
+  .glry .carousel-cell img {
+    height: 160px;
+    width: 160px;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 415px) and (max-height: 736px) {
+  /*iphone 6/7/8 plus*/
+  #p1 {
+    font-size: 1.2rem;
+    margin-left: -25%;
+    font-weight: 600;
+  }
+  .h2 {
+    font-size: 0.9rem;
+    margin-left: -50%;
+  }
+  #small-text {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 25px;
+    margin-bottom: -10px;
+    font-weight: 700;
+  }
+  .par1 {
+    font-size: 1.3rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 25px;
+    margin-right: -10px;
+    font-weight: 800;
+  }
+  .par11 {
+    margin-left: -35px;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-right: -30px;
+  }
+  .rope {
+    top: 105%;
+  }
+  .wrappers {
+    margin-top: 170%;
+  }
+  .glry {
+    margin-top: 180%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 12px;
+    margin: 0px auto;
+    word-spacing: 10px;
+  }
+}
+@media (max-width: 412px) and (max-height: 824px) {
+  /*pixel 2XL*/
+  h2 {
+    font-size: 1.1rem;
+    margin-right: -20px;
+  }
+  #small-text {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 25px;
+    margin-bottom: -10px;
+    font-weight: 700;
+  }
+  .wrappers {
+    margin-top: 185%;
+  }
+  .glry {
+    margin-top: 190%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 12px;
+    margin: 0px auto;
+    word-spacing: 7px;
+  }
+}
+@media (max-width: 412px) and (max-height: 732px) {
+  /*pixel 2*/
+  h2 {
+    font-size: 1.1rem;
+    margin-right: -20px;
+  }
+  .rope {
+    top: 105%;
+  }
+  .wrappers {
+    margin-top: 170%;
+  }
+  .glry .carousel-cell img {
+    height: 150px;
+    width: 150px;
+    margin-left: 20%;
+  }
+  .domains h2 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 376px) and (max-height: 813px) {
+  /*iphone x*/
+  .wrappers {
+    margin-top: 200%;
+  }
+  .glry {
+    margin-top: 200%;
+  }
+  .glry2 {
+    margin-top: 20%;
+  }
+  .domains h2 {
+    top: 100%;
+    font-size: 12px;
+    word-spacing: 5px;
+  }
+  .glry .carousel-cell img {
+    height: 140px;
+    width: 140px;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 376px) and (max-height: 668px) {
+  /*iphone 6/7/8*/
+  #small-text {
+    font-size: 0.8rem;
+    margin-left: 25px;
+    margin-bottom: -10px;
+  }
+  .wrappers {
+    margin-top: 165%;
+  }
+  .domains h2 {
+    word-spacing: 10px;
+  }
+}
+
+/* mobile size  
+ moto g4 and galaxy s5*/
+@media screen and (max-width: 362px) and (max-height: 641px) {
+  h2 {
+    font-size: 1.1rem;
+    margin-right: -20px;
+  }
+  .rope {
+    top: 105%;
+  }
+  .wrappers {
+    margin-top: 165%;
+  }
+  .glry .carousel-cell img {
+    height: 200px;
+    width: 200px;
+    margin-left: 20%;
+  }
+  .domains h2 {
+    word-spacing: 5px;
+    font-size: 11px;
+  }
+  .glry .carousel-cell img {
+    height: 140px;
+    width: 140px;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrappers {
+    margin-top: 165%;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 580px) {
+  .wrappers {
+    margin-top: 140%;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrappers {
+    margin-top: 175%;
+  }
+}
+
+@media (max-width: 340px) {
+  .wrappers {
+    margin-top: 180%;
+  }
+}
+
+@media (max-width: 320px) and (max-height: 568px) {
+  /* iphone 5/SE*/
+  #p1 {
+    font-size: 0.9rem;
+    margin-left: -25%;
+    font-weight: 600;
+  }
+  .h2 {
+    font-size: 0.85rem;
+    margin-left: -50%;
+  }
+  #small-text {
+    font-size: 0.7rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 30px;
+    margin-bottom: -20px;
+    font-weight: 700;
+  }
+  .par1 {
+    font-size: 1rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 25px;
+    margin-right: -10px;
+    font-weight: 800;
+  }
+  .par11 {
+    margin-left: -35px;
+  }
+  h2 {
+    font-size: 1rem;
+    margin-right: -30px;
+  }
+  .wrappers {
+    margin-top: 160%;
+  }
+  .glry .carousel-cell img {
+    height: 120px;
+    width: 120px;
+    margin-left: 5%;
+  }
+}
